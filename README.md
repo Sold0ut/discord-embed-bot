@@ -6,6 +6,7 @@
 export {
 
 TOKEN=YOUT_BOT_TOKEN
+
 }
 
 If you don't know how to create an Discord application and get your Bot Tokne, watch this:
