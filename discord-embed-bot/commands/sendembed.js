@@ -7,7 +7,7 @@ module.exports = {
 
         const targetchannel = message.mentions.channels.first()
         if (!targetchannel) {
-            message.reply(' Bitte gebe einen Channel an, in dem dein Embed gesendet werden soll.');
+            message.reply(' Please select a Channel to send the embed! - >sendembed [#channelid] [JSON Code]');
             return;
         }
 
@@ -23,8 +23,8 @@ module.exports = {
         targetchannel.send(text, { 
             embed: json,
         })
-        } catch(error) {
-            message.reply(` Ein unerwarteter Fehler ist aufgetreten: ` + error.message);
+        } catch(err) {
+            message.reply(` An unexpected error occurred: ` + err.message);
         }
     }
 }
