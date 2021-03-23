@@ -47,5 +47,5 @@ client.on('message', message => {
     }
 
 })
-
+ 
 client.login(process.env.TOKEN).then(console.log('[INFO]'.green + ' Bot Logged In!'));
