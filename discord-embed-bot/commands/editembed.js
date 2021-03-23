@@ -11,17 +11,14 @@ module.exports = {
         const targetChannel = message.mentions.channels.first();
 
         const targetMessage = args[1];
-        
-
-        console.log('Target Message: ' + targetMessage + ' Target Channel: ' + targetChannel);
 
         if (!targetMessage) {
-            message.reply(' Bitte gebe die Message / Channel ID von dem Embed an, welches du ändern möchtest.');
+            message.reply(' Please select a the channel in witch the embed is in and an message id! Channel needs to be mentioned. - >editembed [#channel id] [message id] [new JSON Code]');
             return;
         }
 
         if (isNaN(targetMessage)) {
-            message.reply('Target Message is not a Message ID!')
+            message.reply(' Target Message is not a Message ID!')
             return;
         }
 
