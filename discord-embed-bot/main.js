@@ -23,7 +23,7 @@ client.on('ready', () => {
     console.log('[INFO] '.green + 'Discord Embed Bot online!')
     client.user.setPresence({
         activity: {
-            name: "mit Embeds!",
+            name: "with embeds!",
             type: "PLAYING"
         },
         status: 'online'
@@ -31,7 +31,7 @@ client.on('ready', () => {
 })
 
 client.on('shardError', error => {
-    console.error('[ERROR]'.red + ' Ein unerwarteter Fehler ist aufgetreten!: ', error);
+    console.error('[ERROR]'.red + ' An unexpected error occurred: ', error);
 });
 
 client.on('message', message => {
