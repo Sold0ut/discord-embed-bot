@@ -2,7 +2,7 @@
 
 1: You have to install: "nodejs", "discord.js", "dotenv", "colors" using npm. Google it for tutorials. 
 
-2: You have to create an file named ".env" in your bot folder with following content:
+2: You have to create an file named ".env" in the "discord-embed-bot"-folder with following content:
 
 export {
 
